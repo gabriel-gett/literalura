@@ -10,9 +10,9 @@ public class Libro {
     private Long Id;
     @Column(unique = true)
     private String titulo;
-    private String autor;
     private String idiomas;
     private Double descargas;
+    private String autor;
 
     public Libro() {
     }
@@ -32,36 +32,36 @@ public class Libro {
         Id = id;
     }
 
-    public String getTitle() {
+    public String getTitulo() {
         return titulo;
     }
 
-    public void setTitle(String title) {
-        this.titulo = title;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
-    public String getAuthor() {
+    public String getAutor() {
         return autor;
     }
 
-    public void setAuthor(String author) {
-        this.autor = author;
+    public void setAutor(String autor) {
+        this.autor = autor;
     }
 
-    public String getLanguage() {
+    public String getIdiomas() {
         return idiomas;
     }
 
-    public void setLanguage(String language) {
-        this.idiomas = language;
+    public void setIdiomas(String idiomas) {
+        this.idiomas = idiomas;
     }
 
-    public Double getDownloads() {
+    public Double getDescargas() {
         return descargas;
     }
 
-    public void setDownloads(Double downloads) {
-        this.descargas = downloads;
+    public void setDescargas(Double descargas) {
+        this.descargas = descargas;
     }
 
     public Autor getFirstAuthor(DatosLibro datosLibro) {
@@ -75,7 +75,7 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "**** Book Info ****" +
+        return "**** Informacion del libro ****" +
                 "\n\tTitulo: " + titulo +
                 "\n\tAutor: " + autor +
                 "\n\tidioma: " + idiomas +

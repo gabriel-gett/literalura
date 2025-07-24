@@ -16,7 +16,7 @@ public class Autor {
     private Integer nacimiento;
     private Integer fallecimiento;
 
-    @OneToMany(mappedBy = "autor", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "autor", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Libro> libros;
 
     public Autor() {
@@ -75,7 +75,7 @@ public class Autor {
 
     @Override
     public String toString() {
-        return "**** Author Info ****" +
+        return "**** Informacion del autor ****" +
                 "\n\tnombre: " + nombre +
                 "\n\tnacimiento: " + nacimiento +
                 "\n\tfallecimiento: " + fallecimiento;
