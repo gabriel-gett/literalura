@@ -5,10 +5,17 @@
 
 <h2>Contiene</h2>
 
-<ol>
-  <li>Java</li>
-  <li>Spring</li>
-  <li>Postgres</li>
-</ol>
+<div>
+  <ul>
+    <li>Java</li>
+    <li>Spring</li>
+    <li>Postgres</li>
+  </ul>
+</div>
+
+<h3>API usada para el proyecto:</h3>
+<ul>
+    <li>Gutendex</li>
+  </ul>
 
 
